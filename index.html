@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>An offer you cannot refuse</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="inspiredbyAnu">
+    
+    <style type="text/css">
+    body{
+        background-image: url("image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #h1id{
+        position: absolute;
+        left: 30%;
+        top: 140px;
+        width: auto;
+        height: 200px;
+    }
+
+    #yup{
+        position: absolute;
+        left: 33%;
+        top: 250px;
+        width: 220px;
+        height: 220px;
+    }
+
+    #neverr{
+        position: absolute;
+        left: 45%;
+        top: 250px;
+        width: 220px;
+        height: 220px;
+    }
+
+    </style>
+
+     <script type="text/javascript">
+    function yess()
+    {
+        alert("Mujhe pehle se hi pta tha :D");
+    }
+    chk = 1
+    function nopes()
+    {
+        var elem = document.getElementById("neverr");
+        if(chk == 1)
+        {
+            elem.style.top = "120px";
+            elem.style.left = "450px";
+            chk = 2;
+        }
+        else if(chk == 2)
+        {
+            elem.style.top = "80px";
+            elem.style.left = "60px";
+            chk = 3;
+        }
+        else if(chk == 3)
+        {
+            elem.style.top = "250px";
+            elem.style.left = "45%";
+            chk = 1;
+        }
+    }
+    </script>
+
+
+</head>
+<body>
+    <h1 id="h1id" >Will you be my Valentine ?</h1>
+    <div id ="yup">
+        <input type="button" value="  YES  " onclick="yess()" />
+    </div>
+    <div id = "neverr">
+        <input type="button" value="  NO  " onmouseover="nopes()" />
+    </div>
+
+       
+</body>
+</html>
